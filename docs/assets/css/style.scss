@@ -17,10 +17,21 @@
     left: auto;
 }
 
-a.navbar-item:hover,
+a.navbar-item:hover
 .navbar-link:hover {
     background-color: rgba($color: #fff, $alpha: 0.25) !important;
     color: white !important;
+}
+
+a.navbar-item.logo,
+a.navbar-item.logo:hover {
+    background-color: rgba($color: #fff, $alpha: 0.25) !important;
+    color: white !important;
+    padding: 0;
+}
+
+a.navbar-item.logo img {
+    max-height: 3.5rem;
 }
 
 a.navbar-item.is-active {
@@ -74,7 +85,8 @@ a.navbar-item.is-active {
         margin: auto;
 
         img {
-            border: 0.25rem dotted black;
+            border: 0.05rem solid#ccc;
+            padding: 1rem;
         }
     }
 
