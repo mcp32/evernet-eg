@@ -5,7 +5,7 @@
         <div class="navbar-brand">
             <a class="navbar-item logo"
                 href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
-                <img src="{{site.site-logo}}" alt="{{site.title}}">
+                <img src="{{site.baseurl}}{{site.site-logo}}" alt="{{site.title}}">
             </a>
             <div class="navbar-burger" data-target="navbar-menu">
                 <span></span>
